@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Products from './pages/Products';
-import './styles.css';
 
 const router = createBrowserRouter([
   {
