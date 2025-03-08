@@ -5,7 +5,7 @@ const Products: React.FC = () => {
     <main className="mt-12 flex-1">
       <section className="mb-8 text-center">
         <h1 className="mb-2 text-4xl text-primary">Our Products</h1>
-        <p className="text-xl italic text-text-light">
+        <p className="text-text-light text-xl italic">
           Quality plants and supplies for every garden enthusiast
         </p>
       </section>
@@ -25,18 +25,18 @@ const Products: React.FC = () => {
               <h2 className="text-2xl font-bold text-primary">Monstera Deliciosa</h2>
 
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Indoor
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Popular
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Air Purifying
                 </span>
               </div>
 
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 The Swiss Cheese Plant features unique split leaves and is perfect for adding a
                 tropical touch to your home. Easy to care for and grows well in bright, indirect
                 light.
@@ -54,17 +54,17 @@ const Products: React.FC = () => {
             <div className="p-4">
               <h2 className="text-2xl font-bold text-primary">Peace Lily</h2>
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Indoor
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Low Light
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Flowering
                 </span>
               </div>
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 An elegant flowering plant with glossy green leaves and white blooms. Peace Lilies
                 thrive in low light conditions and help purify the air, making them ideal for
                 bedrooms and offices.
@@ -82,17 +82,17 @@ const Products: React.FC = () => {
             <div className="p-4">
               <h2 className="text-2xl font-bold text-primary">Snake Plant</h2>
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Indoor
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Drought Tolerant
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Beginner Friendly
                 </span>
               </div>
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 Also known as Mother-in-Law's Tongue, this striking plant features tall leaves with
                 yellow edges. Extremely low maintenance and excellent for air purification.
               </p>
@@ -116,18 +116,18 @@ const Products: React.FC = () => {
               <h2 className="text-2xl font-bold text-primary">Lavender</h2>
 
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Outdoor
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Fragrant
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Perennial
                 </span>
               </div>
 
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 This aromatic herb produces beautiful purple flowers and a calming scent. Perfect
                 for garden borders, containers, and attracting pollinators. Drought-resistant once
                 established.
@@ -145,17 +145,17 @@ const Products: React.FC = () => {
             <div className="p-4">
               <h2 className="text-2xl font-bold text-primary">Hydrangea</h2>
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Outdoor
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Flowering
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Shade Tolerant
                 </span>
               </div>
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 Known for their large, showy blooms that change color based on soil pH, hydrangeas
                 add stunning visual interest to any landscape. These versatile shrubs thrive in
                 partial shade and moist, well-draining soil.
@@ -173,17 +173,17 @@ const Products: React.FC = () => {
             <div className="p-4">
               <h2 className="text-2xl font-bold text-primary">Desert Rose</h2>
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Outdoor
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Drought Resistant
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Flowering
                 </span>
               </div>
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 This striking succulent develops a thick, swollen trunk and produces vibrant pink or
                 red flowers. Perfect for hot, dry gardens, it requires minimal water and thrives in
                 full sun conditions.
@@ -208,18 +208,18 @@ const Products: React.FC = () => {
               <h2 className="text-2xl font-bold text-primary">Premium Potting Soil</h2>
 
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Organic
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Multi-Purpose
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Nutrient-Rich
                 </span>
               </div>
 
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 Our premium organic potting mix is specially formulated for container plants. This
                 nutrient-rich blend promotes healthy root development and provides excellent
                 drainage while retaining moisture.
@@ -237,17 +237,17 @@ const Products: React.FC = () => {
             <div className="p-4">
               <h2 className="text-2xl font-bold text-primary">Ceramic Plant Pots</h2>
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Decorative
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Various Sizes
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Indoor/Outdoor
                 </span>
               </div>
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 Elevate your plant display with our collection of handcrafted ceramic pots.
                 Available in various sizes, colors, and designs to complement any decor. Each pot
                 includes a drainage hole and saucer.
@@ -265,17 +265,17 @@ const Products: React.FC = () => {
             <div className="p-4">
               <h2 className="text-2xl font-bold text-primary">Garden Tool Set</h2>
               <div className="mb-3 mt-2 flex flex-wrap gap-2">
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Essential Tools
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Ergonomic
                 </span>
-                <span className="rounded-full bg-accent px-2 py-0.5 text-sm font-semibold text-dark">
+                <span className="bg-accent rounded-full px-2 py-0.5 text-sm font-semibold text-dark">
                   Durable
                 </span>
               </div>
-              <p className="mt-2 text-base leading-6 text-text-light">
+              <p className="text-text-light mt-2 text-base leading-6">
                 This comprehensive set includes all the essential tools for gardening success:
                 pruning shears, hand trowel, cultivator, weeder, and gloves. Made with durable
                 materials and ergonomic handles for comfortable use.
