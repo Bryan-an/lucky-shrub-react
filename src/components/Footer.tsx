@@ -3,11 +3,11 @@ import logo from '../assets/images/asset-2@3x.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer>
-      <img className="logo" src={logo} alt="Lucky Shrub Logo" />
-      <small className="copyright">
+    <footer className="mt-12 flex items-center justify-between border-t border-border pt-6">
+      <img className="w-20 object-contain" src={logo} alt="Lucky Shrub Logo" />
+      <p className="text-sm text-gray-600">
         &copy; {new Date().getFullYear()} Lucky Shrub. All rights reserved.
-      </small>
+      </p>
     </footer>
   );
 };
