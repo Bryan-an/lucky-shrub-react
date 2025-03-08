@@ -11,8 +11,8 @@ const Navbar: React.FC = () => {
             end
             className={({ isActive }) =>
               isActive
-                ? 'text-lg font-bold text-primary underline no-underline transition-colors duration-300'
-                : 'text-lg font-bold text-black no-underline transition-colors duration-300 hover:text-primary'
+                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
+                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
             }
           >
             Home
@@ -23,8 +23,8 @@ const Navbar: React.FC = () => {
             to="/products"
             className={({ isActive }) =>
               isActive
-                ? 'text-lg font-bold text-primary underline no-underline transition-colors duration-300'
-                : 'text-lg font-bold text-black no-underline transition-colors duration-300 hover:text-primary'
+                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
+                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
             }
           >
             Products
@@ -35,8 +35,8 @@ const Navbar: React.FC = () => {
             to="/contact"
             className={({ isActive }) =>
               isActive
-                ? 'text-lg font-bold text-primary underline no-underline transition-colors duration-300'
-                : 'text-lg font-bold text-black no-underline transition-colors duration-300 hover:text-primary'
+                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
+                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
             }
           >
             Contact
@@ -47,8 +47,8 @@ const Navbar: React.FC = () => {
             to="/about"
             className={({ isActive }) =>
               isActive
-                ? 'text-lg font-bold text-primary underline no-underline transition-colors duration-300'
-                : 'text-lg font-bold text-black no-underline transition-colors duration-300 hover:text-primary'
+                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
+                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
             }
           >
             About

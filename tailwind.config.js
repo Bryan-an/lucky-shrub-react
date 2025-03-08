@@ -9,6 +9,8 @@ export default {
         dark: '#333333',
         light: '#f5f5f5',
         border: '#e5e5e5',
+        accent: '#f4cf80',
+        'text-light': '#666666',
       },
       fontFamily: {
         sans: ['Open Sans', 'sans-serif'],
