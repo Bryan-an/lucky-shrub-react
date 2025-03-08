@@ -80,75 +80,84 @@ const Contact: React.FC = () => {
       </section>
 
       <section className="mb-12">
-        <div className="rounded-lg border border-border bg-white p-6 shadow-sm">
-          <h2 className="mb-6 text-2xl font-bold text-primary">Send Us a Message</h2>
-          <form className="space-y-4" id="contactForm" onSubmit={handleSubmit}>
-            <div className="space-y-1">
-              <label htmlFor="name" className="block text-sm font-medium text-dark">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full rounded-md border border-gray-300 p-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              />
+        <div className="rounded-lg border border-border bg-white p-8 shadow-md transition-all duration-300 hover:shadow-lg">
+          <h2 className="border-b border-primary/20 pb-2 text-2xl font-bold text-primary">
+            Send Us a Message
+          </h2>
+          <form className="space-y-6" id="contactForm" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="space-y-2">
+                <label htmlFor="name" className="block text-sm font-medium text-dark">
+                  Name <span className="text-primary">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-gray-300 p-3 shadow-sm transition-all duration-200 placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="block text-sm font-medium text-dark">
+                  Email <span className="text-primary">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-gray-300 p-3 shadow-sm transition-all duration-200 placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="your.email@example.com"
+                />
+              </div>
             </div>
-            <div className="space-y-1">
-              <label htmlFor="email" className="block text-sm font-medium text-dark">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full rounded-md border border-gray-300 p-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              />
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="space-y-2">
+                <label htmlFor="phone" className="block text-sm font-medium text-dark">
+                  Phone (optional)
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-gray-300 p-3 shadow-sm transition-all duration-200 placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  placeholder="(000) 000-0000"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-dark">
+                  Subject <span className="text-primary">*</span>
+                </label>
+                <select
+                  id="subject"
+                  name="subject"
+                  required
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-gray-300 bg-white p-3 shadow-sm transition-all duration-200 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                >
+                  <option value="" disabled>
+                    Please select a subject
+                  </option>
+                  <option value="product-inquiry">Product Inquiry</option>
+                  <option value="gardening-advice">Gardening Advice</option>
+                  <option value="order-status">Order Status</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
             </div>
-            <div className="space-y-1">
-              <label htmlFor="phone" className="block text-sm font-medium text-dark">
-                Phone (optional)
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full rounded-md border border-gray-300 p-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              />
-            </div>
-            <div className="space-y-1">
-              <label htmlFor="subject" className="block text-sm font-medium text-dark">
-                Subject
-              </label>
-              <select
-                id="subject"
-                name="subject"
-                required
-                value={formData.subject}
-                onChange={handleChange}
-                className="w-full rounded-md border border-gray-300 p-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              >
-                <option value="" disabled>
-                  Please select a subject
-                </option>
-                <option value="product-inquiry">Product Inquiry</option>
-                <option value="gardening-advice">Gardening Advice</option>
-                <option value="order-status">Order Status</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <label htmlFor="message" className="block text-sm font-medium text-dark">
-                Message
+                Message <span className="text-primary">*</span>
               </label>
               <textarea
                 id="message"
@@ -157,30 +166,34 @@ const Contact: React.FC = () => {
                 required
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full rounded-md border border-gray-300 p-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                className="w-full rounded-md border border-gray-300 p-3 shadow-sm transition-all duration-200 placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                placeholder="How can we help you?"
               ></textarea>
             </div>
-            <div className="space-y-1">
-              <label className="flex items-start space-x-2">
+            <div className="space-y-1 rounded-md border border-primary/10 bg-primary/5 p-4">
+              <label className="flex items-start space-x-3">
                 <input
                   type="checkbox"
                   name="newsletter"
                   id="newsletter"
                   checked={formData.newsletter}
                   onChange={handleChange}
-                  className="mt-0.5 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                  className="mt-0.5 h-5 w-5 rounded border-gray-300 text-primary focus:ring-primary"
                 />
                 <span className="text-sm text-gray-600">
                   Subscribe to our newsletter for plant care tips and special offers
                 </span>
               </label>
             </div>
-            <button
-              type="submit"
-              className="rounded-md bg-primary px-4 py-2 font-medium text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-            >
-              Send Message
-            </button>
+            <div className="border-t border-gray-100 pt-4">
+              <button
+                type="submit"
+                className="rounded-md bg-primary px-6 py-3 font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              >
+                Send Message
+              </button>
+              <p className="mt-3 text-xs text-gray-500">* Required fields</p>
+            </div>
           </form>
         </div>
       </section>
