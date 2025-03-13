@@ -34,7 +34,7 @@ const Home: React.FC = () => {
               Transform your living space with our curated collection of beautiful, easy-to-care-for
               indoor plants. Perfect for beginners and plant enthusiasts alike, these air-purifying
               varieties thrive in various light conditions and bring a touch of nature to any room.
-              Each plant comes with care instructions and a decorative pot option.
+              Each plant comes with care instructions and a decorative pot.
             </p>
           </div>
         </article>
