@@ -1,59 +1,20 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import NavItem from './NavItem';
 
 const Navbar: React.FC = () => {
+  const navItems = [
+    { to: '/', label: 'Home', exact: true },
+    { to: '/products', label: 'Products' },
+    { to: '/contact', label: 'Contact' },
+    { to: '/about', label: 'About' },
+  ];
+
   return (
     <nav className="mt-12">
       <ul className="flex list-none justify-center gap-4">
-        <li>
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              isActive
-                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
-                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
-            }
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/products"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
-                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
-            }
-          >
-            Products
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
-                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
-            }
-          >
-            Contact
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-lg font-bold text-primary underline transition-colors duration-300'
-                : 'text-lg font-bold text-black transition-colors duration-300 hover:text-primary'
-            }
-          >
-            About
-          </NavLink>
-        </li>
+        {navItems.map((item) => (
+          <NavItem key={item.to} to={item.to} label={item.label} exact={item.exact} />
+        ))}
       </ul>
     </nav>
   );
