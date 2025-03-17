@@ -1,46 +1,46 @@
-import { FormEvent, useState } from 'react';
+import { useForm, SubmitHandler } from 'react-hook-form';
+
+// Define the type for our form data
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+  newsletter: boolean;
+}
 
 const useContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    newsletter: false,
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
-  ) => {
-    const { name, value, type } = e.target;
-    const isCheckbox = type === 'checkbox';
-    setFormData({
-      ...formData,
-      [name]: isCheckbox ? (e.target as HTMLInputElement).checked : value,
-    });
-  };
-
-  const resetForm = () => {
-    setFormData({
+  // Initialize React Hook Form with default values
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactFormData>({
+    defaultValues: {
       name: '',
       email: '',
       phone: '',
       subject: '',
       message: '',
       newsletter: false,
-    });
-  };
+    },
+  });
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // Form submission handler
+  const onSubmit: SubmitHandler<ContactFormData> = (data) => {
     // In a real application, you would send the form data to a server here
-    console.error('Form submitted:', formData);
     alert("Message sent! We'll get back to you soon.");
-    resetForm();
+    reset(); // Reset the form using React Hook Form's reset method
   };
 
-  return { formData, handleChange, handleSubmit };
+  return {
+    register,
+    errors,
+    isSubmitting,
+    handleSubmit: handleSubmit(onSubmit),
+  };
 };
 
 export default useContactForm;
