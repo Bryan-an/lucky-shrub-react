@@ -29,7 +29,7 @@ const useContactForm = () => {
   });
 
   // Form submission handler
-  const onSubmit: SubmitHandler<ContactFormData> = (data) => {
+  const onSubmit: SubmitHandler<ContactFormData> = () => {
     // In a real application, you would send the form data to a server here
     alert("Message sent! We'll get back to you soon.");
     reset(); // Reset the form using React Hook Form's reset method
