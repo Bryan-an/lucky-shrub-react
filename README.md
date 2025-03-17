@@ -1,54 +1,110 @@
-# React + TypeScript + Vite
+# Lucky Shrub - React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for Lucky Shrub, a garden design firm and plant nursery specializing in indoor and outdoor plants.
 
-Currently, two official plugins are available:
+## 📋 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lucky Shrub's website is built with the following technologies:
 
-## Expanding the ESLint configuration
+- React 19
+- TypeScript
+- Vite
+- TailwindCSS
+- React Router DOM
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Responsive design that works on mobile, tablet, and desktop
+- Multiple content pages: Home, About, Products, and Contact
+- Modern UI with accessible components
+- Fast page transitions with React Router
+
+## 🧰 Prerequisites
+
+- Node.js 18 or higher
+- pnpm 9.15.4 or higher
+
+## 💻 Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone [repository-url]
+   cd lucky-shrub-react
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+4. Open your browser and visit:
+   ```
+   http://localhost:5173
+   ```
+
+## 📦 Build for Production
+
+```bash
+pnpm build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The built files will be in the `dist` directory.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧪 Running Tests
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+pnpm lint
 ```
+
+## 🛠️ Development Tools
+
+- ESLint for code linting
+- Prettier for code formatting
+- Husky for git hooks
+- Commitlint for conventional commits
+- TypeScript for type checking
+
+## 📁 Project Structure
+
+```
+/
+├── public/             # Static assets
+├── src/
+│   ├── assets/         # Images and other assets
+│   ├── components/     # Reusable UI components
+│   ├── hooks/          # Custom React hooks
+│   ├── pages/          # Application pages
+│   │   ├── Home.tsx    # Homepage
+│   │   ├── About.tsx   # About page
+│   │   ├── Products.tsx # Products page
+│   │   └── Contact.tsx # Contact page
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Entry point
+├── index.html          # HTML template
+├── tailwind.config.js  # TailwindCSS configuration
+└── vite.config.ts      # Vite configuration
+```
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 👥 Authors
+
+- [@Bryan-an](https://github.com/Bryan-an)
+
+## 🙏 Acknowledgements
+
+- Meta Frontend Developer Professional Certificate Program
