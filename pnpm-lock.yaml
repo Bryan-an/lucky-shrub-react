@@ -11,6 +11,9 @@ importers:
       react:
         specifier: 19.0.0
         version: 19.0.0
+      react-chatbot-kit:
+        specifier: 2.2.2
+        version: 2.2.2
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
@@ -1574,6 +1577,12 @@ packages:
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
+
+  react-chatbot-kit@2.2.2:
+    resolution: {integrity: sha512-8p/i0KkzkhoyG2XsL6Pb6f72k9j7GYNAc5SOa4f9OZwbCD3Q34uEruNPc06qa1wZHKfT6aFna19PA2plFuO2NA==}
+
+  react-conditionally-render@1.0.2:
+    resolution: {integrity: sha512-CtjIgaLHVDSgHis3gv/PT/8EnD6GPUL8PrhUjh7DP6S5Y3p56dGu7y2nVg6pYv1kv+fGznRhRmX3assr/vRw3A==}
 
   react-dom@19.0.0:
     resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
@@ -3253,6 +3262,12 @@ snapshots:
   punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
+
+  react-chatbot-kit@2.2.2:
+    dependencies:
+      react-conditionally-render: 1.0.2
+
+  react-conditionally-render@1.0.2: {}
 
   react-dom@19.0.0(react@19.0.0):
     dependencies:
