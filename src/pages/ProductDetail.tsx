@@ -1,10 +1,20 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '@/entities/product/model';
+import { useCartStore } from '@/entities/cart/model/store';
+import { cn } from '@/shared/lib/utils/cn';
 
 const ProductDetail: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
   const product = products.find((p) => p.id === productId);
+  const addItem = useCartStore((state) => state.addItem);
+  const cartItems = useCartStore((state) => state.items);
+
+  const handleAddToCart = () => {
+    if (product) {
+      addItem(product);
+    }
+  };
 
   if (!product) {
     return (
@@ -22,6 +32,8 @@ const ProductDetail: React.FC = () => {
       </div>
     );
   }
+
+  const isInCart = cartItems.some((item) => item.id === product.id);
 
   return (
     <div className="rounded-lg border border-border bg-white p-6 shadow-lg">
@@ -53,17 +65,22 @@ const ProductDetail: React.FC = () => {
 
           <p className="mb-6 text-base leading-relaxed text-text-light">{product.description}</p>
 
-          {/* Add to Cart Button (Placeholder) */}
+          {/* Add to Cart Button */}
           <button
             type="button"
-            className="w-full rounded-md bg-primary px-8 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 md:w-auto"
+            onClick={handleAddToCart}
+            disabled={isInCart}
+            className={cn(
+              'w-full rounded-md px-8 py-3 font-semibold text-white shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 md:w-auto',
+              isInCart ? 'cursor-not-allowed bg-gray-400' : 'bg-primary hover:bg-primary/90',
+            )}
           >
-            Add to Cart
+            {isInCart ? 'Added to Cart' : 'Add to Cart'}
           </button>
 
           <div className="mt-6">
             <Link to="/products" className="text-primary hover:underline">
-              &larr; Back to Products
+              {'←'} Back to Products
             </Link>
           </div>
         </div>
