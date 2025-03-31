@@ -1,8 +1,8 @@
 import React from 'react';
-import ornamentalPlants from '../shared/assets/images/ornamental-plants-at-home.webp';
-import plant1 from '../shared/assets/images/plant-1.webp';
-import plant2 from '../shared/assets/images/plant-2.webp';
-import plant3 from '../shared/assets/images/plant-3.webp';
+import ornamentalPlants from '@/shared/assets/images/ornamental-plants-at-home.webp';
+import plant1 from '@/shared/assets/images/plant-1.webp';
+import plant2 from '@/shared/assets/images/plant-2.webp';
+import plant3 from '@/shared/assets/images/plant-3.webp';
 
 const Home: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import { products, Product } from '../entities/product/model'; // Corrected path again
-import ProductCard from '../entities/product/ui/ProductCard'; // Corrected path again
+import { products, Product } from '@/entities/product/model'; // Updated path
+import ProductCard from '@/entities/product/ui/ProductCard'; // Updated path
 
 const Products: React.FC = () => {
   // Get unique category names (ensuring they are strings)

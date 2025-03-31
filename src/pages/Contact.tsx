@@ -1,7 +1,7 @@
 import React from 'react';
-import ContactInformation from '../features/contact/ui/ContactInformation';
-import ContactForm from '../features/contact/ui/ContactForm';
-import FAQSection from '../features/contact/ui/FAQSection';
+import ContactInformation from '@/features/contact/ui/ContactInformation';
+import ContactForm from '@/features/contact/ui/ContactForm';
+import FAQSection from '@/features/contact/ui/FAQSection';
 
 const Contact: React.FC = () => {
   return (

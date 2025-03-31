@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Chatbot from 'react-chatbot-kit';
 import 'react-chatbot-kit/build/main.css';
 
-import config from '../config/ChatbotConfig';
-import MessageParser from '../model/MessageParser';
-import ActionProvider from '../model/ActionProvider';
+import config from '@/features/chatbot/config/ChatbotConfig';
+import MessageParser from '@/features/chatbot/model/MessageParser';
+import ActionProvider from '@/features/chatbot/model/ActionProvider';
 // import './ChatbotStyles.css'; // Removed as requested
 
 const ChatbotComponent: React.FC = () => {

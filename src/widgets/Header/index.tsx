@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../shared/assets/images/asset-2@3x.png';
+import logo from '@/shared/assets/images/asset-2@3x.png';
 
 const Header: React.FC = () => {
   return (

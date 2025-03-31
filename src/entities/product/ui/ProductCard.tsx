@@ -1,5 +1,5 @@
 import React from 'react';
-import { Product } from '../model'; // Adjusted import path
+import { Product } from '@/entities/product/model'; // Updated path
 
 // Helper component to render a single product card
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {

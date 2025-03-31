@@ -1,4 +1,4 @@
-import { products, Product } from '../../../entities/product/model'; // Updated import path
+import { products, Product } from '@/entities/product/model'; // Updated path
 
 // Helper function to find relevant products based on keywords
 const findRelevantProducts = (message: string): Product[] => {
