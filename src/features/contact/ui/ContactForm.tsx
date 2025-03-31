@@ -1,6 +1,6 @@
 import React from 'react';
-import useContactForm from '../../hooks/useContactForm';
-import InputField from './InputField';
+import useContactForm from '../lib/hooks/useContactForm';
+import InputField from '../../../shared/ui/InputField';
 
 const ContactForm: React.FC = () => {
   const { register, handleSubmit, errors, isSubmitting } = useContactForm();

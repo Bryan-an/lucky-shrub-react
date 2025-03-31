@@ -1,9 +1,9 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import ChatbotComponent from './chatbot/ChatbotComponent';
+import Header from '../Header';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
+import ChatbotComponent from '../../features/chatbot/ui/ChatbotComponent';
 
 const Layout: React.FC = () => {
   return (

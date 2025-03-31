@@ -1,5 +1,5 @@
 // MessageParser.ts
-// import { products, Product } from '../../data/products'; // Unused
+// import { products, Product } from '../../../entities/product/model'; // Updated import path (still unused, commented out)
 
 class MessageParser {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
