@@ -1,5 +1,6 @@
 import React from 'react';
 import { UseFormRegisterReturn } from 'react-hook-form';
+import { cn } from '@/shared/lib/utils/cn';
 
 type InputFieldProps = {
   id: string;
@@ -44,7 +45,7 @@ const InputField: React.FC<InputFieldProps> = ({
         id={id}
         rows={rows || 5}
         placeholder={placeholder}
-        className={`${baseClassName} ${errorClassName}`}
+        className={cn(baseClassName, errorClassName)}
         {...(register || { name, value, onChange, required })}
       />
       {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
@@ -56,7 +57,7 @@ const InputField: React.FC<InputFieldProps> = ({
     <>
       <select
         id={id}
-        className={`${baseClassName} ${errorClassName}`}
+        className={cn(baseClassName, errorClassName)}
         {...(register || { name, value, onChange, required })}
       >
         {options?.map((option) => (
@@ -76,7 +77,7 @@ const InputField: React.FC<InputFieldProps> = ({
         type={type}
         id={id}
         placeholder={placeholder}
-        className={`${baseClassName} ${errorClassName}`}
+        className={cn(baseClassName, errorClassName)}
         {...(register || { name, value, onChange, required })}
       />
       {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
